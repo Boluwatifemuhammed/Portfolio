@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logos/css/all.min.css">
+    <title>To-do list</title>
+</head>
+
+<body>
+    <div class="todo-container">
+        <div class="todo-wrapper">
+            <nav>
+
+                <div class="bars"><i class="fas fa-list"></i></div>
+
+                <div class="title">
+                    <h2 class="title-text">
+                        <marquee>My To-do List</marquee>
+                    </h2>
+                </div>
+                <div class="object-one"><i class="fas fa-heart"></i></div>
+                <div class="object-two"><i class="fas fa-check"></i></div>
+                <div class="object-three"><i class="fas fa-bookmark"></i></div>
+
+            </nav>
+            <div class="todo-content">
+                <div class="edit-cont">
+                    <input type="text" class="edit-input">
+                    <button class="edit-btn"> <i class="fas fa-check"></i> </button>
+
+                </div>
+                <div class="todo-list"></div>
+                <div class="new-task-cont">
+                    <button class="new-task-btn">+New Task <i class="fas fa-calendar"></i></button>
+                </div>
+                <div class="modal">
+                    <input type="text" class="taskinput" placeholder="Enter what to do">
+                    <input type="button" class="taskbtn" value="Add new Task">
+                    <button class="Cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

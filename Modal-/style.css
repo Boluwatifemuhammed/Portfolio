@@ -1,0 +1,120 @@
+body {}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img-cont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid red; */
+    place-items: center;
+    position: absolute;
+    z-index: 2;
+
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.img-cont img {
+    border-radius: 30px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 3px solid blue;
+
+}
+
+.modal {
+    margin-top: 10%;
+    width: 60%;
+    height: 60vh;
+    border: 8px solid rgba(61, 116, 255, 0.616);
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transition: 2s ease; */
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.479);
+    z-index: 4;
+    border-radius: 40px;
+    padding: 50px;
+}
+
+.remove button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 0%;
+
+}
+
+
+.modal img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.remove button {
+    font-size: 40px;
+    width: 150px;
+    height: 55px;
+    background-color: rgb(108, 108, 240);
+    border-radius: 20px;
+    color: white;
+    transition: 0.4s ease;
+}
+
+@media screen and (max-width:500px) {
+    .img-cont {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        height: 50vh;
+
+
+    }
+
+    .modal {
+        padding: 5%;
+        margin-top: 30%;
+    }
+
+    .img-cont img {
+        border-radius: 10px;
+    }
+
+    .modal img {
+        width: 100%;
+        /* margin-left: 0; */
+        height: 40%;
+    }
+
+    .remove button {
+        font-size: 20px;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(108, 108, 240);
+        border-radius: 10px;
+        color: white;
+        transition: 0.4s ease;
+        margin: 10%;
+    }
+}
